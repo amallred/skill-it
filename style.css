@@ -1,25 +1,32 @@
 body{
     background-color: var(--light);
     text-align: center;
+    background: linear-gradient(to bottom right, var(--light), var(--accent1));
     }
 :root{
-    --primary: #738ECA;
+    --primary: #3d5588;
     --secondary: #9DC3B3;
     --accent1: #F0C384;
     --accent2: #C86F93;
-    --light: #EAE8E6;
+    --light: #fcfaf8;
     --shade: #C7CEE1;
 }
 p{
     font-family: Georgia;
+    padding: 0px 100px;
+    font-size: 16px;
+    color: var(--primary);
 }
 h1, h2, h3{
     font-family: Verdana;
 }
-.container{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+h1{
+    font-size: 32px;
+    color: var(--light);
+}
+h2{
+    font-size: 20px;
+    color: var(--primary)
 }
 header{
     height: 75px;
@@ -27,16 +34,46 @@ header{
     background: var(--primary);
     text-align: center;
     padding: 10px;
+    margin-bottom: 10px;
     color: var(--light)
 }
-footer{
-    height: 75px;
-    width: 100%;
-    background: var(--secondary);
-    text-align: center;
-    padding: 10px 10px 50px 10px;
-    margin-top:auto;
+/* Recipe cards */
+article{
+    display: inline-block;
+    width: 25%;
+    border: solid 1px var(--primary);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px 10px 30px 10px;
+    box-shadow: -3px 3px var(--shade);
+    background-color: var(--light);
 }
+.recipeCard{
+    padding: 0;
+}
+.recipeImage{
+    width: 100%;    
+}
+/*buttons*/
+.cookBtn{
+    border-radius: 3px;
+    border: none;
+    background-color: var(--primary);
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 3px;
+    box-shadow: -3px 3px var(--shade);
+    color: var(--light);
+    font-weight: bold;
+}
+.cookBtn:hover{
+    background-color: var(--secondary);
+}
+.cookBtn:active{
+    box-shadow: -1px 1px var(--shade);
+    transform: translateY(2px);
+}
+/* Site colors */
 .primary{
     background-color: var(--primary);
 }
@@ -50,11 +87,18 @@ footer{
     background-color: var(--accent2);
 }
 .light{
-    background-color: var(--light);
-    
+    background-color: var(--light);    
 }
 .shade{
     background-color: var(--shade);
+}
+footer{
+    height: 75px;
+    width: 100%;
+    background: var(--secondary);
+    text-align: center;
+    padding: 10px 10px 50px 10px;
+    margin-top: 20px;
 }
 footer ul li{
     display:inline-block;
