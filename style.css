@@ -9,7 +9,7 @@ body{
     --accent1: #F0C384;
     --accent2: #C86F93;
     --light: #fcfaf8;
-    --shade: #C7CEE1;
+    --shade: #b0b6c7;
 }
 p{
     font-family: Georgia;
@@ -28,8 +28,11 @@ h2{
     font-size: 20px;
     color: var(--primary)
 }
+h3{
+    font-size: 18px;
+}
 header{
-    height: 75px;
+    /* height: 75px; */
     width: 100%;
     background: var(--primary);
     text-align: center;
@@ -37,6 +40,34 @@ header{
     margin-bottom: 10px;
     color: var(--light)
 }
+header a{
+    color: var(--light);
+    text-decoration: none;
+}
+
+/* ****************************
+*****************************
+MENU BUTTONS IN PROGRESS; plan: copy style from resume buttons
+**************************
+************************* */
+menu li{
+    display: inline-block;
+    width: 20%;
+    color: var(--primary);
+    background-color: var(--shade);
+    list-style: none;
+    margin: 2px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+menu a{
+    color: var(--primary);
+}
+menu a:hover{
+    background-color: var(--secondary);
+}
+
+
 /* Recipe cards */
 article{
     display: inline-block;
