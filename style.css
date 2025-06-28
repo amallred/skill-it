@@ -2,6 +2,7 @@ body{
     background-color: var(--light);
     text-align: center;
     background: linear-gradient(to bottom right, var(--light), var(--accent1));
+    /* height: 100vh; */
     }
 :root{
     --primary: #3d5588;
@@ -38,35 +39,37 @@ header{
     text-align: center;
     padding: 10px;
     margin-bottom: 10px;
-    color: var(--light)
+    color: var(--light);
+    /* left: 0px;
+    top: 0px;
+    position: absolute; */
 }
 header a{
     color: var(--light);
     text-decoration: none;
 }
 
-/* ****************************
-*****************************
-MENU BUTTONS IN PROGRESS; plan: copy style from resume buttons
-**************************
-************************* */
-menu li{
+menu a{
     display: inline-block;
     width: 20%;
     color: var(--primary);
-    background-color: var(--shade);
+    background-color: var(--secondary);
     list-style: none;
     margin: 2px;
+    padding: 10px;
     border-radius: 4px;
     font-weight: bold;
-}
-menu a{
-    color: var(--primary);
+    font-family: Verdana;
+    font-size: 20px;
+    box-shadow: -3px 3px var(--accent1);
 }
 menu a:hover{
-    background-color: var(--secondary);
+    background-color: var(--shade);
 }
-
+menu a:active{
+    box-shadow: -1px 1px var(--accent1);
+    transform: translateY(2px);
+}
 
 /* Recipe cards */
 article{
@@ -84,6 +87,17 @@ article{
 }
 .recipeImage{
     width: 100%;    
+}
+.cards{
+    display: flex;
+    justify-content: center;
+}
+/*definitions*/
+.definitions {
+    /* height: 30vh; */
+    width: 80%;
+    text-align: left;
+    padding: 10px 40px;
 }
 /*buttons*/
 .cookBtn{
